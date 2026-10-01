@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="id" data-theme="dark">
+<html lang="id" data-theme="light">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0a0a0a">
+  <meta name="theme-color" content="#f4f1ea">
   <meta name="description" content="Portofolio Fadhil Ahmad Qomarudin, siswa kelas 12 TJKT di SMK Tunas Harapan Pati.">
   <title>Fadhil Ahmad Qomarudin — Portofolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -453,6 +453,7 @@
       .custom-cursor { display: none; }
     }
   </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="topbar">
@@ -470,7 +471,7 @@
           <a href="#sertifikat">Sertifikat</a>
           <a href="#kontak">Kontak</a>
         </nav>
-        <button class="theme-toggle" type="button" aria-label="Aktifkan tema terang" title="Ganti tema">
+        <button class="theme-toggle" type="button" aria-label="Aktifkan tema gelap" title="Ganti tema">
           <svg class="theme-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg>
         </button>
         <button class="menu-toggle" type="button" aria-controls="site-navigation" aria-expanded="false" aria-label="Buka navigasi">
@@ -707,11 +708,11 @@
     themeButton.addEventListener("click", () => {
       const isLight = document.documentElement.dataset.theme === "light";
       document.documentElement.dataset.theme = isLight ? "dark" : "light";
-      themeButton.setAttribute("aria-label", isLight ? "Aktifkan tema terang" : "Aktifkan tema gelap");
+      themeButton.setAttribute("aria-label", isLight ? "Aktifkan tema gelap" : "Aktifkan tema terang");
       themeIcon.innerHTML = isLight
         ? '<circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path>'
         : '<path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5 8.5 8.5 0 1 0 20.5 14.2Z"></path>';
-      document.querySelector('meta[name="theme-color"]').content = isLight ? "#0a0a0a" : "#fafafa";
+      document.querySelector('meta[name="theme-color"]').content = isLight ? "#1e2c33" : "#f4f1ea";
     });
 
     // Efek mengetik sederhana; tetap statis bila pengguna memilih reduced motion
