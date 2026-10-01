@@ -381,8 +381,8 @@
     }
     .custom-cursor.is-visible { opacity: 1; }
     .custom-cursor.is-hovering { width: 34px; height: 34px; }
-    html[data-theme="light"] .custom-cursor { border-color: #0a0a0a; }
-    html[data-theme="dark"] .custom-cursor { border-color: #fafafa; }
+    html[data-theme="light"] .custom-cursor,
+    html[data-theme="dark"] .custom-cursor { border-color: var(--dusty-deep); }
     @media (pointer: fine) and (prefers-reduced-motion: no-preference) {
       body.has-custom-cursor, body.has-custom-cursor a, body.has-custom-cursor button { cursor: none; }
     }
